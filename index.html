@@ -133,7 +133,6 @@ import {getAuth,GoogleAuthProvider,signInWithPopup,signOut,onAuthStateChanged} f
 import {getFirestore,doc,onSnapshot,setDoc,serverTimestamp} from 'https://www.gstatic.com/firebasejs/12.18.0/firebase-firestore.js';
 
 const firebaseConfig={apiKey:'AIzaSyA2MC3o5yjDbhxYpHPiTYQPVSq-XIez8-A',authDomain:'marvel-tracker-sync.firebaseapp.com',projectId:'marvel-tracker-sync',storageBucket:'marvel-tracker-sync.firebasestorage.app',messagingSenderId:'216838662363',appId:'1:216838662363:web:5c0d9656e65263d63644fe'};
-const allowedEmail='donbidon199@gmail.com';
 const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app),provider=new GoogleAuthProvider();
 provider.setCustomParameters({prompt:'select_account'});
 let currentUser=null,unsubscribe=null,cloudLoaded=false;
@@ -145,7 +144,6 @@ button.onclick=async()=>{button.disabled=true;try{currentUser?await signOut(auth
 onAuthStateChanged(auth,async user=>{
   if(unsubscribe){unsubscribe();unsubscribe=null} cloudLoaded=false; window.cloudSave=null; currentUser=user;
   if(!user){button.textContent='Войти через Google';button.classList.remove('secondary');setStatus('Облачная синхронизация выключена','Войдите в Google, чтобы получить свой прогресс на этом устройстве.');return}
-  if(user.email!==allowedEmail||!user.emailVerified){await signOut(auth);setStatus('Доступ запрещён','Этот Google-аккаунт не имеет доступа к облачному прогрессу.');return}
   button.textContent='Выйти';button.classList.add('secondary');setStatus('Синхронизация…','Загружаю ваш прогресс из Firebase.',true);
   const ref=doc(db,'users',user.uid);
   window.cloudSave=async watched=>{if(!cloudLoaded)return;await setDoc(ref,{watched,updatedAt:serverTimestamp(),email:user.email},{merge:true})};
