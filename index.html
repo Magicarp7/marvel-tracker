@@ -13,13 +13,13 @@ body:before{content:'';position:fixed;z-index:-1;inset:0;pointer-events:none;bac
 .focus-card{position:relative;overflow:hidden;min-height:285px;background:linear-gradient(125deg,#1c202a,#10131a 68%);border:1px solid rgba(255,255,255,.14);border-radius:23px;margin-bottom:14px;box-shadow:0 20px 58px rgba(0,0,0,.34)}.focus-main{position:relative;z-index:2;width:60%;min-height:285px;padding:26px 0 25px 28px;display:flex;flex-direction:column}.poster-pane{position:absolute;z-index:0;inset:0 0 0 auto;width:48%;background:linear-gradient(145deg,#361a20,#111722);background-size:cover;background-position:center 23%;transition:background-image .3s ease}.poster-pane:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#181c25 0%,rgba(24,28,37,.9) 9%,rgba(12,15,21,.28) 47%,rgba(7,9,13,.1)),linear-gradient(0deg,rgba(8,10,14,.48),transparent 65%);pointer-events:none}.focus-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:25px}.nextlabel{font-size:11px;font-weight:850;letter-spacing:.17em;text-transform:uppercase;color:rgba(255,255,255,.76)}.nextpos{font-size:12px;color:rgba(255,255,255,.62);font-variant-numeric:tabular-nums}.focus-copy{max-width:650px}.nexttitle{font-size:clamp(25px,4.8vw,43px);font-weight:900;line-height:1.04;letter-spacing:-.04em;text-wrap:balance;text-shadow:0 4px 22px rgba(0,0,0,.65)}.nextmeta{display:flex;align-items:center;gap:9px;margin-top:12px;color:rgba(255,255,255,.72);font-size:13px}.focus-card .badge{background:rgba(5,7,10,.48);border-color:rgba(255,255,255,.18);backdrop-filter:blur(8px)}.focus-actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:auto;padding-top:25px}.nextbtn,.list-toggle{border:0;border-radius:12px;color:white;font:inherit;font-weight:850;padding:12px 15px;cursor:pointer;transition:.2s}.nextbtn{background:linear-gradient(135deg,var(--accent),#ff4b50);box-shadow:0 10px 28px rgba(0,0,0,.28)}.list-toggle{background:rgba(18,22,30,.78);border:1px solid rgba(255,255,255,.17);backdrop-filter:blur(10px)}.nextbtn:hover,.list-toggle:hover{transform:translateY(-1px);filter:brightness(1.08)}.nextbtn:active,.list-toggle:active{transform:translateY(0)}.all-done{color:#d6d9e1;font-size:14px;line-height:1.5;margin-top:12px}.list-panel{display:none;margin-top:14px}.list-panel.open{display:block;animation:reveal .22s ease-out}.list-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:22px 0 4px}.list-head h2{margin:0;font-size:24px;letter-spacing:-.025em}.list-head p{margin:5px 0 0;color:var(--muted);font-size:13px}@keyframes reveal{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
 .controls{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 16px;position:sticky;top:0;z-index:5;padding:10px 0;background:linear-gradient(to bottom,rgba(7,8,12,.96) 70%,transparent);backdrop-filter:blur(6px)}.controls button,.controls input{background:rgba(20,23,31,.94);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font:inherit;outline:none;transition:.2s}.controls button{cursor:pointer}.controls button:hover{border-color:#424a5e}.controls button.active{border-color:rgba(230,36,41,.85);background:rgba(230,36,41,.12);box-shadow:inset 0 0 0 1px rgba(230,36,41,.12)}.controls input{flex:1;min-width:220px}.controls input:focus{border-color:#59637a;box-shadow:0 0 0 3px rgba(89,99,122,.15)}
 .list{display:grid;gap:9px}.item{display:flex;align-items:center;gap:13px;background:linear-gradient(180deg,rgba(21,25,35,.92),rgba(17,20,28,.92));border:1px solid var(--line);border-radius:15px;padding:13px 14px;transition:.2s;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.08)}.item:hover{transform:translateY(-1px);border-color:#40485b;background:linear-gradient(180deg,#1a1f2b,#141821)}.item.done{opacity:.58;background:#10131a}.item.done .title{text-decoration:line-through}.item.highlight{outline:2px solid var(--accent);box-shadow:0 0 0 6px rgba(230,36,41,.12),0 18px 45px rgba(0,0,0,.25)}.num{width:32px;color:#687084;text-align:right;flex:none;font-variant-numeric:tabular-nums}.item input{appearance:none;width:22px;height:22px;border:2px solid #596174;border-radius:7px;background:#0e1118;display:grid;place-items:center;flex:none;cursor:pointer;transition:.2s}.item input:checked{background:var(--accent);border-color:var(--accent)}.item input:checked:after{content:'✓';font-size:15px;font-weight:900;color:white;line-height:1}.title{font-weight:750;line-height:1.25}.meta{font-size:12px;color:var(--muted);margin-top:4px}.badge{display:inline-flex;align-items:center;border:1px solid #343b4b;border-radius:999px;padding:2px 7px;background:#181d27}.empty{text-align:center;color:var(--muted);padding:42px 10px}.backupbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 16px}.backupbar button{flex:1;min-width:180px;background:rgba(20,23,31,.94);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font:inherit;font-weight:700;cursor:pointer}.backupbar button:hover{border-color:#59637a}.savehint{font-size:12px;color:var(--muted);margin:-4px 0 14px;line-height:1.45}.footer{text-align:center;color:#656d80;font-size:12px;margin-top:24px}
-.authbar{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(20,23,31,.94);border:1px solid var(--line);border-radius:15px;padding:12px 14px;margin-bottom:14px}.authtext{min-width:0}.authstatus{font-weight:800}.authdetail{font-size:12px;color:var(--muted);margin-top:3px}.authbtn{border:0;border-radius:11px;background:linear-gradient(135deg,var(--accent),#ff4b50);color:#fff;font:inherit;font-weight:800;padding:10px 13px;cursor:pointer;white-space:nowrap}.authbtn.secondary{background:#252b38;border:1px solid #3b4354}.syncing{opacity:.7}
+.optional-badge{color:#e9c878!important;border-color:rgba(233,200,120,.36)!important;background:rgba(114,86,26,.18)!important;margin-left:5px}.unreleased-badge{color:#ff676b!important;border-color:rgba(255,74,80,.62)!important;background:rgba(160,20,27,.25)!important;margin-left:5px;font-weight:850}.watch-note{display:inline-flex;margin-left:10px;padding-left:10px;border-left:1px solid #3a4253;color:#b8c0d1;line-height:1.5}.series-group{background:rgba(14,17,24,.78);border:1px solid var(--line);border-radius:15px;overflow:hidden}.series-group summary{cursor:pointer;list-style:none;padding:15px 16px;font-weight:850;display:flex;justify-content:space-between;gap:12px;align-items:center}.series-group summary::-webkit-details-marker{display:none}.series-group summary:after{content:'⌄';font-size:20px;color:var(--muted);transition:.2s}.series-group[open] summary:after{transform:rotate(180deg)}.series-group .group-progress{font-size:12px;color:var(--muted);font-weight:650;margin-left:auto}.series-children{display:grid;gap:7px;padding:0 8px 8px}.series-children .item{box-shadow:none;background:rgba(24,28,38,.88)}.authbar{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(20,23,31,.94);border:1px solid var(--line);border-radius:15px;padding:12px 14px;margin-bottom:14px}.authtext{min-width:0}.authstatus{font-weight:800}.authdetail{font-size:12px;color:var(--muted);margin-top:3px}.authbtn{border:0;border-radius:11px;background:linear-gradient(135deg,var(--accent),#ff4b50);color:#fff;font:inherit;font-weight:800;padding:10px 13px;cursor:pointer;white-space:nowrap}.authbtn.secondary{background:#252b38;border:1px solid #3b4354}.syncing{opacity:.7}
 @media(max-width:620px){.wrap{padding:22px 12px 55px}.hero{display:block}.stats{padding:17px}.focus-card{min-height:330px;border-radius:20px}.focus-main{width:74%;min-height:330px;padding:22px 0 20px 20px}.poster-pane{width:50%;background-position:center 18%}.poster-pane:after{background:linear-gradient(90deg,#181c25 0%,rgba(24,28,37,.9) 15%,rgba(10,12,17,.34) 65%,rgba(7,9,13,.16)),linear-gradient(0deg,rgba(8,10,14,.58),transparent 70%)}.focus-top{margin-bottom:22px}.nexttitle{font-size:clamp(24px,8vw,35px)}.focus-actions{align-items:stretch;flex-direction:column;padding-top:22px}.nextbtn,.list-toggle{width:100%}.controls{top:-1px}.controls input{width:100%;flex-basis:100%}.controls button{flex:1}.item{padding:12px 10px;gap:10px}.num{width:25px;font-size:12px}.title{font-size:14px}.authbar{align-items:stretch;flex-direction:column}.authbtn{width:100%}}
 </style>
 </head><body><main class="wrap"><header class="hero"><div><div class="brand"><i></i>MARVEL WATCHLIST</div><h1>Что смотреть дальше?</h1></div></header>
 <section class="stats"><div class="statrow"><div><div class="stat-title">Общий прогресс</div><div class="stat-big" id="count">0 / 85 просмотрено</div></div><div class="pct" id="pct">0%</div></div><div class="bar"><div class="fill" id="fill"></div></div></section>
 <section class="authbar"><div class="authtext"><div class="authstatus" id="authStatus">Подключение к синхронизации…</div><div class="authdetail" id="authDetail">Войдите в Google, чтобы отметки были одинаковыми на всех устройствах.</div></div><button class="authbtn" id="authBtn">Войти через Google</button></section>
-<section class="focus-card" id="focusCard" aria-live="polite"><div class="poster-pane" id="posterPane" aria-hidden="true"></div><div class="focus-main"><div class="focus-top"><div class="nextlabel">Смотреть дальше</div><div class="nextpos" id="nextPos">1 из 85</div></div><div class="focus-copy"><div class="nexttitle" id="nextTitle">Железный человек</div><div class="nextmeta"><span class="badge" id="nextType">Фильм</span><span>Следующий по порядку просмотра</span></div><div class="all-done" id="allDone" hidden>Отличная работа — весь список просмотрен.</div></div><div class="focus-actions"><button class="nextbtn" id="nextBtn">✓ Отметить просмотренным</button><button class="list-toggle" id="listToggle" aria-expanded="false" aria-controls="listPanel">Открыть весь список</button></div></div></section>
+<section class="focus-card" id="focusCard" aria-live="polite"><div class="poster-pane" id="posterPane" aria-hidden="true"></div><div class="focus-main"><div class="focus-top"><div class="nextlabel">Смотреть дальше</div><div class="nextpos" id="nextPos">1 из 85</div></div><div class="focus-copy"><div class="nexttitle" id="nextTitle">Железный человек</div><div class="nextmeta"><span class="badge" id="nextType">Фильм</span><span class="badge" id="nextRating">IMDb: загрузка…</span></div><div class="all-done" id="allDone" hidden>Отличная работа — весь список просмотрен.</div></div><div class="focus-actions"><button class="nextbtn" id="nextBtn">✓ Отметить просмотренным</button><button class="list-toggle" id="skipBtn" hidden>Пропустить сериал</button><button class="list-toggle" id="listToggle" aria-expanded="false" aria-controls="listPanel">Открыть весь список</button></div></div></section>
 <section class="list-panel" id="listPanel"><div class="list-head"><div><h2>Весь список</h2><p>Ищи, фильтруй и меняй любые отметки.</p></div></div><div class="backupbar"><button id="exportBtn">Сохранить прогресс</button><button id="importBtn">Загрузить прогресс</button><input id="importFile" type="file" accept="application/json,.json" hidden></div><div class="savehint" id="saveHint">Резервная копия пригодится для переноса прогресса вручную.</div><div class="controls"><input id="search" placeholder="Поиск по названию"><button data-filter="all" class="active">Все</button><button data-filter="todo">Не просмотрено</button><button data-filter="done">Просмотрено</button><button data-filter="movie">Фильмы</button><button data-filter="series">Сериалы</button></div><div class="list" id="list"></div></section><div class="footer">Автосохранение: Firebase + локальная резервная копия • у каждого аккаунта свой прогресс</div></main>
 <script>
 const raw=`Железный человек|movie
@@ -52,20 +52,20 @@ const raw=`Железный человек|movie
 Что, если...? — сезон 1|series
 Шан-Чи и легенда десяти колец|movie
 Вечные|movie
-Человек-паук (2002) — Тоби Магуайр|movie
-Человек-паук 2 (2004) — Тоби Магуайр|movie
-Человек-паук 3 (2007) — Тоби Магуайр|movie
-Новый Человек-паук (2012) — Эндрю Гарфилд|movie
-Новый Человек-паук: Высокое напряжение (2014) — Эндрю Гарфилд|movie
-Веном|movie
-Веном 2|movie
+Человек-паук (2002) — Тоби Магуайр|movie|optional
+Человек-паук 2 (2004) — Тоби Магуайр|movie|optional
+Человек-паук 3 (2007) — Тоби Магуайр|movie|optional
+Новый Человек-паук (2012) — Эндрю Гарфилд|movie|optional
+Новый Человек-паук: Высокое напряжение (2014) — Эндрю Гарфилд|movie|optional
+Веном|movie|optional
+Веном 2|movie|optional
 Соколиный глаз|series
 Человек-паук: Нет пути домой|movie
 Лунный рыцарь|series
 Доктор Стрэндж: В мультивселенной безумия|movie
 Мисс Марвел|series
 Тор: Любовь и гром|movie
-Я есть Грут|series
+Я есть Грут — сезон 1|series
 Женщина-Халк: Адвокат|series
 Ночной оборотень|special
 Чёрная пантера: Ваканда навеки|movie
@@ -76,26 +76,26 @@ const raw=`Железный человек|movie
 Локи — сезон 2|series
 Марвелы|movie
 Эхо|series
-Веном: Последний танец|movie
-Люди Икс (2000)|movie
-Люди Икс 2|movie
-Люди Икс: Последняя битва|movie
-Люди Икс: Начало. Росомаха|movie
-Люди Икс: Первый класс|movie
-Росомаха: Бессмертный|movie
-Люди Икс: Дни минувшего будущего|movie
-Люди Икс: Апокалипсис|movie
-Люди Икс: Тёмный Феникс|movie
-Дэдпул|movie
-Дэдпул 2|movie
-Логан|movie
-Дэдпул и Росомаха|movie
+Веном: Последний танец|movie|optional
+Люди Икс (2000)|movie|optional
+Люди Икс 2|movie|optional
+Люди Икс: Последняя битва|movie|optional
+Люди Икс: Начало. Росомаха|movie|optional
+Люди Икс: Первый класс|movie|optional
+Росомаха: Бессмертный|movie|optional
+Люди Икс: Дни минувшего будущего|movie|optional
+Люди Икс: Апокалипсис|movie|optional
+Люди Икс: Тёмный Феникс|movie|optional
+Дэдпул|movie|optional
+Дэдпул 2|movie|optional
+Логан|movie|optional
+Дэдпул и Росомаха|movie|optional
 Это всё Агата|series
 Капитан Америка: Новый мир|movie
-Сорвиголова — сезон 1|series
-Сорвиголова — сезон 2|series
-Защитники|series
-Сорвиголова — сезон 3|series
+Сорвиголова — сезон 1|series|optional
+Сорвиголова — сезон 2|series|optional
+Защитники|series|optional
+Сорвиголова — сезон 3|series|optional
 Сорвиголова: Рождённый заново — сезон 1|series
 Громовержцы*|movie
 Железное сердце|series
@@ -106,32 +106,88 @@ const raw=`Железный человек|movie
 Сорвиголова: Рождённый заново — сезон 2|series
 Человек-паук: Совершенно новый день|movie
 Мстители: Судный день|movie
-Мстители: Секретные войны|movie`;
-const items=raw.split('\n').map((x,i)=>{const [title,type]=x.split('|');return{id:i+1,title,type}});
-let watched=new Set();let filter='all';
+Мстители: Секретные войны|movie
+Агент Картер — сезон 1|series|optional
+Агенты «Щ.И.Т.» — сезон 1|series|optional
+Сверхлюди|series|optional
+Джессика Джонс — сезон 1|series|optional
+Люк Кейдж — сезон 1|series|optional
+Железный кулак — сезон 1|series|optional
+Каратель — сезон 1|series|optional
+Плащ и Кинжал — сезон 1|series|optional
+Беглецы — сезон 1|series|optional
+Хелстром|series|optional
+Блэйд|movie|optional
+Блэйд 2|movie|optional
+Блэйд: Троица|movie|optional
+Сорвиголова (2003)|movie|optional
+Электра|movie|optional
+Фантастическая четвёрка (2005)|movie|optional
+Фантастическая четвёрка: Вторжение Серебряного сёрфера|movie|optional
+Фантастическая четвёрка (2015)|movie|optional
+Новые мутанты|movie|optional
+Морбиус|movie|optional
+Мадам Паутина|movie|optional
+Крэйвен-охотник|movie|optional
+Джессика Джонс — сезон 2|series|optional
+Джессика Джонс — сезон 3|series|optional
+Люк Кейдж — сезон 2|series|optional
+Железный кулак — сезон 2|series|optional
+Каратель — сезон 2|series|optional
+Каратель: Последняя расправа|special
+Вижн|series
+Сорвиголова: Рождённый заново — сезон 3|series
+Агенты «Щ.И.Т.» — сезон 2|series|optional
+Агенты «Щ.И.Т.» — сезон 3|series|optional
+Агенты «Щ.И.Т.» — сезон 4|series|optional
+Агенты «Щ.И.Т.» — сезон 5|series|optional
+Агенты «Щ.И.Т.» — сезон 6|series|optional
+Агенты «Щ.И.Т.» — сезон 7|series|optional
+Агент Картер — сезон 2|series|optional
+Плащ и Кинжал — сезон 2|series|optional
+Беглецы — сезон 2|series|optional
+Беглецы — сезон 3|series|optional
+Что, если...? — сезон 2|series
+Что, если...? — сезон 3|series
+Я есть Грут — сезон 2|series`;
+const items=raw.split('\n').map((x,i)=>{const [title,type,flag]=x.split('|');return{id:i+1,title,type,optional:flag==='optional'}});
+function moveAfter(title,anchor){const from=items.findIndex(x=>x.title===title),to=items.findIndex(x=>x.title===anchor);if(from<0||to<0)return;const [item]=items.splice(from,1),newTo=items.findIndex(x=>x.title===anchor);items.splice(newTo+1,0,item)}
+moveAfter('Сорвиголова — сезон 1','Стражи Галактики. Часть 2');moveAfter('Джессика Джонс — сезон 1','Сорвиголова — сезон 1');moveAfter('Сорвиголова — сезон 2','Джессика Джонс — сезон 1');moveAfter('Люк Кейдж — сезон 1','Сорвиголова — сезон 2');moveAfter('Железный кулак — сезон 1','Люк Кейдж — сезон 1');moveAfter('Защитники','Железный кулак — сезон 1');moveAfter('Каратель — сезон 1','Защитники');moveAfter('Джессика Джонс — сезон 2','Каратель — сезон 1');moveAfter('Люк Кейдж — сезон 2','Джессика Джонс — сезон 2');moveAfter('Железный кулак — сезон 2','Люк Кейдж — сезон 2');moveAfter('Сорвиголова — сезон 3','Железный кулак — сезон 2');moveAfter('Каратель — сезон 2','Сорвиголова — сезон 3');moveAfter('Джессика Джонс — сезон 3','Каратель — сезон 2');
+moveAfter('Агент Картер — сезон 1','Первый мститель');moveAfter('Агент Картер — сезон 2','Агент Картер — сезон 1');moveAfter('Я есть Грут — сезон 1','Стражи Галактики. Часть 2');moveAfter('Я есть Грут — сезон 2','Я есть Грут — сезон 1');
+moveAfter('Агенты «Щ.И.Т.» — сезон 1','Первый мститель: Другая война');moveAfter('Агенты «Щ.И.Т.» — сезон 2','Мстители: Эра Альтрона');moveAfter('Агенты «Щ.И.Т.» — сезон 3','Человек-муравей');moveAfter('Агенты «Щ.И.Т.» — сезон 4','Первый мститель: Противостояние');moveAfter('Агенты «Щ.И.Т.» — сезон 5','Тор: Рагнарёк');moveAfter('Агенты «Щ.И.Т.» — сезон 6','Человек-муравей и Оса');moveAfter('Агенты «Щ.И.Т.» — сезон 7','Мстители: Финал');
+moveAfter('Сверхлюди','Защитники');moveAfter('Беглецы — сезон 1','Джессика Джонс — сезон 3');moveAfter('Плащ и Кинжал — сезон 1','Беглецы — сезон 1');moveAfter('Беглецы — сезон 2','Плащ и Кинжал — сезон 1');moveAfter('Плащ и Кинжал — сезон 2','Беглецы — сезон 2');moveAfter('Беглецы — сезон 3','Плащ и Кинжал — сезон 2');moveAfter('Хелстром','Беглецы — сезон 3');
+moveAfter('Что, если...? — сезон 2','Локи — сезон 2');moveAfter('Что, если...? — сезон 3','Это всё Агата');moveAfter('Каратель: Последняя расправа','Сорвиголова: Рождённый заново — сезон 2');moveAfter('Человек-паук: Совершенно новый день','Каратель: Последняя расправа');moveAfter('Мстители: Судный день','Человек-паук: Совершенно новый день');
+const unreleasedTitles=new Set(['Вижн','Мстители: Судный день','Мстители: Секретные войны','Сорвиголова: Рождённый заново — сезон 3']);items.forEach(x=>x.unreleased=unreleasedTitles.has(x.title));items.sort((a,b)=>Number(a.unreleased)-Number(b.unreleased));
+const watchAfter={'Агенты «Щ.И.Т.» — сезон 1':'После «Другой войны»','Агенты «Щ.И.Т.» — сезон 2':'После «Эры Альтрона»','Агенты «Щ.И.Т.» — сезон 3':'После «Человека-муравья»','Агенты «Щ.И.Т.» — сезон 4':'После «Противостояния»','Агенты «Щ.И.Т.» — сезон 5':'После «Рагнарёка»','Агенты «Щ.И.Т.» — сезон 6':'После «Человека-муравья и Осы»','Агенты «Щ.И.Т.» — сезон 7':'После «Финала»','Беглецы — сезон 3':'После 2 сезона «Плаща и Кинжала»'};
+let watched=new Set(),skipped=new Set();let filter='all';
 const labels={movie:'Фильм',series:'Сериал',special:'Спецвыпуск'};
-const STORAGE_KEY='marvelWatched', DB_NAME='marvelTrackerDB', DB_STORE='state';
+const STORAGE_KEY='marvelWatched',SKIP_KEY='marvelSkipped', DB_NAME='marvelTrackerDB', DB_STORE='state';
 function readLocal(){try{return JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]')}catch(e){return[]}}
 function openDB(){return new Promise((resolve,reject)=>{try{const r=indexedDB.open(DB_NAME,1);r.onupgradeneeded=()=>{if(!r.result.objectStoreNames.contains(DB_STORE))r.result.createObjectStore(DB_STORE)};r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)}catch(e){reject(e)}})}
 async function readDB(){try{const db=await openDB();return await new Promise((resolve,reject)=>{const tx=db.transaction(DB_STORE,'readonly'),r=tx.objectStore(DB_STORE).get(STORAGE_KEY);r.onsuccess=()=>resolve(Array.isArray(r.result)?r.result:[]);r.onerror=()=>reject(r.error)})}catch(e){return[]}}
 async function writeDB(data){try{const db=await openDB();await new Promise((resolve,reject)=>{const tx=db.transaction(DB_STORE,'readwrite');tx.objectStore(DB_STORE).put(data,STORAGE_KEY);tx.oncomplete=resolve;tx.onerror=()=>reject(tx.error)})}catch(e){}}
 function writeHash(data){try{const h=data.length?'#w='+data.join(','):'';history.replaceState(null,'',location.pathname+location.search+h)}catch(e){}}
 function readHash(){try{const m=location.hash.match(/^#w=([0-9,]+)$/);return m?m[1].split(',').map(Number).filter(Boolean):[]}catch(e){return[]}}
-async function save(){const data=[...watched].sort((a,b)=>a-b);try{localStorage.setItem(STORAGE_KEY,JSON.stringify(data))}catch(e){};writeHash(data);await writeDB(data);if(window.cloudSave)await window.cloudSave(data)}
+async function save(){const data=[...watched].sort((a,b)=>a-b),skipData=[...skipped].sort((a,b)=>a-b);try{localStorage.setItem(STORAGE_KEY,JSON.stringify(data));localStorage.setItem(SKIP_KEY,JSON.stringify(skipData))}catch(e){};writeHash(data);await writeDB(data);if(window.cloudSave)await window.cloudSave(data,skipData)}
 const POSTER_CACHE_KEY='marvelPosterCache';let posterRequest=0;
 function readPosterCache(){try{return JSON.parse(localStorage.getItem(POSTER_CACHE_KEY)||'{}')}catch(e){return{}}}
 function posterQuery(item){return item.title.replace(/\s+—\s+сезон\s+\d+/i,'').replace(/\s+—\s+(Тоби Магуайр|Эндрю Гарфилд)/i,'').trim()}
-async function findPoster(item){const cache=readPosterCache();if(cache[item.id]!==undefined)return cache[item.id];try{const searchUrl='https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&origin=*&language=ru&uselang=ru&type=item&limit=6&search='+encodeURIComponent(posterQuery(item)),search=await fetch(searchUrl).then(r=>r.json()),preferred=(search.search||[]).find(x=>/фильм|сериал|телесериал|сезон/i.test(x.description||''))||(search.search||[])[0];if(!preferred)throw 0;const entityUrl='https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&origin=*&props=sitelinks&sitefilter=enwiki&ids='+preferred.id,entity=await fetch(entityUrl).then(r=>r.json()),wikiTitle=entity.entities?.[preferred.id]?.sitelinks?.enwiki?.title;if(!wikiTitle)throw 0;const summary=await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(wikiTitle.replaceAll(' ','_'))).then(r=>r.json()),poster=summary.originalimage?.source||summary.thumbnail?.source||'';cache[item.id]=poster;try{localStorage.setItem(POSTER_CACHE_KEY,JSON.stringify(cache))}catch(e){}return poster}catch(e){cache[item.id]='';try{localStorage.setItem(POSTER_CACHE_KEY,JSON.stringify(cache))}catch(x){}return''}}
+async function findPoster(item){const cache=readPosterCache();try{const searchUrl='https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&origin=*&language=ru&uselang=ru&type=item&limit=6&search='+encodeURIComponent(posterQuery(item)),search=await fetch(searchUrl).then(r=>r.json()),preferred=(search.search||[]).find(x=>/фильм|сериал|телесериал|сезон/i.test(x.description||''))||(search.search||[])[0];if(!preferred)throw 0;const entityUrl='https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&origin=*&props=sitelinks%7Cclaims&sitefilter=enwiki&ids='+preferred.id,entity=await fetch(entityUrl).then(r=>r.json()),data=entity.entities?.[preferred.id],wikiTitle=data?.sitelinks?.enwiki?.title,imdb=data?.claims?.P345?.[0]?.mainsnak?.datavalue?.value;if(imdb){const ratings=await fetch('https://api.agregarr.org/api/ratings?id='+encodeURIComponent(imdb)).then(r=>r.json());if(item===nextItem()&&ratings?.[0]?.rating)nextRating.textContent='IMDb: '+ratings[0].rating}if(cache[item.id]!==undefined)return cache[item.id];if(!wikiTitle)throw 0;const summary=await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/'+encodeURIComponent(wikiTitle.replaceAll(' ','_'))).then(r=>r.json()),poster=summary.originalimage?.source||summary.thumbnail?.source||'';cache[item.id]=poster;try{localStorage.setItem(POSTER_CACHE_KEY,JSON.stringify(cache))}catch(e){}return poster}catch(e){if(item===nextItem())nextRating.textContent='IMDb: нет оценки';return cache[item.id]||''}}
 async function applyPoster(item){const request=++posterRequest;posterPane.style.backgroundImage='linear-gradient(145deg,#361a20,#111722)';if(!item)return;const poster=await findPoster(item);if(request!==posterRequest||!poster)return;const image=`url("${poster.replaceAll('"','%22')}")`;posterPane.style.backgroundImage=image;document.body.style.setProperty('--page-poster',image)}
-function updateStats(){const n=watched.size,p=Math.round(n/items.length*100),next=items.find(x=>!watched.has(x.id));count.textContent=`${n} / ${items.length} просмотрено`;pct.textContent=p+'%';fill.style.width=p+'%';nextTitle.textContent=next?next.title:'Всё просмотрено 🎉';nextPos.textContent=next?`${next.id} из ${items.length}`:`${items.length} из ${items.length}`;nextType.textContent=next?(labels[next.type]||'Сериал'):'Готово';nextBtn.textContent=next?'✓ Отметить просмотренным':'Всё готово ✓';nextBtn.disabled=!next;nextBtn.style.opacity=next?'1':'.55';allDone.hidden=!!next;applyPoster(next)}
-function render(){const q=search.value.trim().toLowerCase();let arr=items.filter(x=>x.title.toLowerCase().includes(q)).filter(x=>filter==='all'||filter==='done'&&watched.has(x.id)||filter==='todo'&&!watched.has(x.id)||filter==='movie'&&x.type==='movie'||filter==='series'&&x.type!=='movie');list.innerHTML=arr.length?'':'<div class="empty">Ничего не найдено</div>';arr.forEach(x=>{const d=document.createElement('label');d.className='item '+(watched.has(x.id)?'done':'');d.id=`item-${x.id}`;d.innerHTML=`<span class="num">${x.id}</span><input type="checkbox" ${watched.has(x.id)?'checked':''}><span><div class="title">${x.title}</div><div class="meta"><span class="badge">${labels[x.type]||'Сериал'}</span></div></span>`;d.querySelector('input').onchange=e=>{e.target.checked?watched.add(x.id):watched.delete(x.id);save();updateStats();render()};list.appendChild(d)});updateStats()}
-window.applyCloudProgress=async data=>{watched=new Set(data.map(Number).filter(n=>n>=1&&n<=items.length));try{localStorage.setItem(STORAGE_KEY,JSON.stringify([...watched]))}catch(e){};await writeDB([...watched]);render()};window.getWatched=()=>[...watched].sort((a,b)=>a-b);window.renderTracker=render;
-nextBtn.onclick=async()=>{const next=items.find(x=>!watched.has(x.id));if(!next)return;watched.add(next.id);await save();render()};
+function nextItem(){return items.find(x=>!x.unreleased&&!watched.has(x.id)&&!skipped.has(x.id)&&(!x.optional||x.type==='series'))||items.find(x=>!x.unreleased&&!watched.has(x.id)&&!skipped.has(x.id))}
+function updateStats(){const main=items.filter(x=>!x.optional&&!x.unreleased),n=main.filter(x=>watched.has(x.id)).length,p=Math.round(n/main.length*100),next=nextItem();count.textContent=`${n} / ${main.length} основного списка`;pct.textContent=p+'%';fill.style.width=p+'%';nextTitle.textContent=next?next.title:'Всё просмотрено 🎉';nextPos.textContent=next?(next.optional?'Дополнительно':`${main.indexOf(next)+1} из ${main.length}`):`${main.length} из ${main.length}`;nextType.textContent=next?(labels[next.type]||'Сериал')+(next.optional?' • Не обязательно':''):'Готово';nextRating.textContent=next?'IMDb: загрузка…':'';skipBtn.hidden=!next||next.type!=='series';nextBtn.textContent=next?'✓ Отметить просмотренным':'Всё готово ✓';nextBtn.disabled=!next;nextBtn.style.opacity=next?'1':'.55';allDone.hidden=!!next;applyPoster(next)}
+function makeItem(x){const d=document.createElement('label');d.className='item '+(watched.has(x.id)?'done':'');d.id=`item-${x.id}`;d.innerHTML=`<span class="num">${items.indexOf(x)+1}</span><input type="checkbox" ${watched.has(x.id)?'checked':''} ${x.unreleased?'disabled':''}><span><div class="title">${x.title}</div><div class="meta"><span class="badge">${labels[x.type]||'Сериал'}</span>${x.optional?'<span class="badge optional-badge">Не обязательно</span>':''}${x.unreleased?'<span class="badge unreleased-badge">Не вышел</span>':''}${watchAfter[x.title]?`<span class="watch-note">${watchAfter[x.title]}</span>`:''}</div></span>`;d.querySelector('input').onchange=e=>{if(e.target.checked){watched.add(x.id);skipped.delete(x.id)}else watched.delete(x.id);save();updateStats();render()};return d}
+function seriesBase(x){return x.type==='series'?x.title.replace(/\s+—\s+сезон\s+\d+$/i,''):x.title}
+const openSeries=new Set();
+function render(){const q=search.value.trim().toLowerCase(),scrollY=window.scrollY,listWasOpen=listPanel.classList.contains('open');let arr=items.filter(x=>x.title.toLowerCase().includes(q)).filter(x=>filter==='all'||filter==='done'&&watched.has(x.id)||filter==='todo'&&!watched.has(x.id)||filter==='movie'&&x.type==='movie'||filter==='series'&&x.type!=='movie'||filter==='optional'&&x.optional);list.innerHTML=arr.length?'':'<div class="empty">Ничего не найдено</div>';const seen=new Set();arr.forEach(x=>{const base=seriesBase(x),allSeasons=items.filter(s=>seriesBase(s)===base&&s.title!==base),positions=allSeasons.map(s=>items.indexOf(s)).sort((a,b)=>a-b),consecutive=positions.length>1&&positions.every((p,i)=>i===0||p===positions[i-1]+1);if(consecutive){if(seen.has(base))return;seen.add(base);const visible=arr.filter(s=>seriesBase(s)===base),group=document.createElement('details');group.className='series-group';group.open=openSeries.has(base)||!!q||filter!=='all';const done=allSeasons.filter(s=>watched.has(s.id)).length;group.innerHTML=`<summary><span>${base}</span><span class="group-progress">${done} / ${allSeasons.length} сезонов</span></summary><div class="series-children"></div>`;group.ontoggle=()=>group.open?openSeries.add(base):openSeries.delete(base);const children=group.querySelector('.series-children');visible.forEach(s=>children.appendChild(makeItem(s)));list.appendChild(group)}else list.appendChild(makeItem(x))});listPanel.classList.toggle('open',listWasOpen);updateStats();requestAnimationFrame(()=>window.scrollTo({top:scrollY}))}
+window.applyCloudProgress=async(data,skipData=[])=>{watched=new Set(data.map(Number).filter(n=>n>=1&&n<=items.length));skipped=new Set(skipData.map(Number).filter(n=>n>=1&&n<=items.length&&!watched.has(n)));try{localStorage.setItem(STORAGE_KEY,JSON.stringify([...watched]));localStorage.setItem(SKIP_KEY,JSON.stringify([...skipped]))}catch(e){};await writeDB([...watched]);render()};window.getWatched=()=>[...watched].sort((a,b)=>a-b);window.getSkipped=()=>[...skipped].sort((a,b)=>a-b);window.renderTracker=render;
+nextBtn.onclick=async()=>{const next=nextItem();if(!next)return;watched.add(next.id);await save();render()};
+skipBtn.onclick=async()=>{const next=nextItem();if(!next||next.type!=='series')return;skipped.add(next.id);await save();render()};
 listToggle.onclick=()=>{const open=listPanel.classList.toggle('open');listToggle.setAttribute('aria-expanded',String(open));listToggle.textContent=open?'Скрыть весь список':'Открыть весь список';if(open)render()};
 exportBtn.onclick=()=>{const data={version:1,watched:[...watched].sort((a,b)=>a-b),savedAt:new Date().toISOString()};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='marvel-progress.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)};
 importBtn.onclick=()=>importFile.click();importFile.onchange=async()=>{const f=importFile.files&&importFile.files[0];if(!f)return;try{const data=JSON.parse(await f.text()),arr=Array.isArray(data)?data:data.watched;if(!Array.isArray(arr))throw new Error();watched=new Set(arr.map(Number).filter(n=>n>=1&&n<=items.length));await save();render();saveHint.textContent='Прогресс загружен и сохранён.'}catch(e){saveHint.textContent='Не удалось загрузить файл прогресса.'}finally{importFile.value=''}};
 search.oninput=render;document.querySelectorAll('button[data-filter]').forEach(b=>b.onclick=()=>{document.querySelectorAll('button[data-filter]').forEach(x=>x.classList.remove('active'));b.classList.add('active');filter=b.dataset.filter;render()});
-(async()=>{const local=readLocal(),db=await readDB(),hash=readHash();const best=hash.length?hash:(db.length?db:local);watched=new Set(best.map(Number).filter(n=>n>=1&&n<=items.length));render();if(watched.size)await save()})();
+(async()=>{const local=readLocal(),db=await readDB(),hash=readHash();const best=hash.length?hash:(db.length?db:local);watched=new Set(best.map(Number).filter(n=>n>=1&&n<=items.length));try{skipped=new Set(JSON.parse(localStorage.getItem(SKIP_KEY)||'[]').map(Number))}catch(e){};render();if(watched.size||skipped.size)await save()})();
 </script>
 <script type="module">
 import {initializeApp} from 'https://www.gstatic.com/firebasejs/12.18.0/firebase-app.js';
@@ -152,10 +208,10 @@ onAuthStateChanged(auth,async user=>{
   if(!user){button.textContent='Войти через Google';button.classList.remove('secondary');setStatus('Облачная синхронизация выключена','Войдите в Google, чтобы получить свой прогресс на этом устройстве.');return}
   button.textContent='Выйти';button.classList.add('secondary');setStatus('Синхронизация…','Загружаю ваш прогресс из Firebase.',true);
   const ref=doc(db,'users',user.uid);
-  window.cloudSave=async watched=>{if(!cloudLoaded)return;await setDoc(ref,{watched,updatedAt:serverTimestamp(),email:user.email},{merge:true})};
+  window.cloudSave=async(watched,skipped)=>{if(!cloudLoaded)return;await setDoc(ref,{watched,skipped,updatedAt:serverTimestamp(),email:user.email},{merge:true})};
   unsubscribe=onSnapshot(ref,async snap=>{
-    if(snap.exists()&&Array.isArray(snap.data().watched))await window.applyCloudProgress(snap.data().watched);
-    else await setDoc(ref,{watched:window.getWatched(),updatedAt:serverTimestamp(),email:user.email});
+    if(snap.exists()&&Array.isArray(snap.data().watched))await window.applyCloudProgress(snap.data().watched,Array.isArray(snap.data().skipped)?snap.data().skipped:[]);
+    else await setDoc(ref,{watched:window.getWatched(),skipped:window.getSkipped(),updatedAt:serverTimestamp(),email:user.email});
     cloudLoaded=true;setStatus('Синхронизация включена',`${user.email} • прогресс сохраняется на всех устройствах.`);
   },()=>setStatus('Ошибка синхронизации','Проверьте подключение к интернету и обновите страницу.'));
 });
